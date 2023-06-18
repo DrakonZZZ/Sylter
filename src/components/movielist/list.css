@@ -1,9 +1,10 @@
 .movie-list {
     width: 100%;
+    margin-bottom: 4rem;
 }
 
 .list-title {
-    color: rgba(255, 255, 255, 0.068);
+    color: rgba(255, 255, 255, 0.232);
     margin-left: 3rem;
     font-size: 5rem;
     font-weight: 800;
@@ -25,21 +26,33 @@
     margin-left: 3rem;
     display: flex;
     width: max-content;
-    transform: translateX(450px);
+    transition: all 230ms ease-in-out;
 }
 
 .slider-arrow {
     width: 50px;
     height: 100%;
-    color: white;
     position: absolute;
     cursor: pointer;
+    z-index: 10;
 }
 
 .slider-arrow.left {
-    left: 1rem;
+    left: 1.3rem;
+    transition: all 100ms ease-in-out;
+    color: rgba(255, 255, 255, 0.472);
+}
+
+.slider-arrow.left:hover {
+    color: white;
 }
 
 .slider-arrow.right {
     right: 0;
+    transition: all 100ms ease-in-out;
+    color: rgba(255, 255, 255, 0.472);
+}
+
+.slider-arrow.right:hover {
+    color: white;
 }

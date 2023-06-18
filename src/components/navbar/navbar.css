@@ -1,0 +1,84 @@
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    color: rgb(22, 208, 162);
+    background-color: #0b0b0b;
+}
+
+.scrolled {
+    transition: all 0.1 ease-in-out;
+    background-color: #0b0b0b76;
+}
+
+.nav-container {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container h3 {
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+
+.nav-container .left-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+.left-links span {
+    cursor: pointer;
+}
+
+.nav-container .right-links {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+}
+
+.nav-container .right-links img {
+    object-fit: cover;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.premium {
+    background-color: rgb(22, 208, 162);
+    font-weight: 500;
+    color: #0b0b0b;
+    padding: 0.2rem 0.8rem;
+    border-radius: 15px;
+}
+
+.profile .settings {
+    display: none;
+    background-color: #0b0b0b8a;
+    border-radius: 2px;
+}
+
+.profile:hover .settings {
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.settings span {
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid rgba(141, 249, 222, 0.228);
+}
+
+.settings span:last-child {
+    border: none;
+}

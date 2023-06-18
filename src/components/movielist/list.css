@@ -1,0 +1,45 @@
+.movie-list {
+    width: 100%;
+}
+
+.list-title {
+    color: rgba(255, 255, 255, 0.068);
+    margin-left: 3rem;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 5rem;
+    letter-spacing: -0.3rem;
+}
+
+.space-color {
+    color: rgba(22, 208, 162, 0.127);
+    letter-spacing: 0.2rem;
+}
+
+.slider {
+    margin-top: 2rem;
+    position: relative;
+}
+
+.slider .container {
+    margin-left: 3rem;
+    display: flex;
+    width: max-content;
+    transform: translateX(450px);
+}
+
+.slider-arrow {
+    width: 50px;
+    height: 100%;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+}
+
+.slider-arrow.left {
+    left: 1rem;
+}
+
+.slider-arrow.right {
+    right: 0;
+}

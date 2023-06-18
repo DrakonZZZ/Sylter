@@ -1,0 +1,107 @@
+.popular-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.category {
+    align-self: baseline;
+    margin-left: 4rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgb(22, 208, 162) rgb(22, 208, 162);
+    display: flex;
+    align-items: center;
+}
+
+.category select {
+    cursor: pointer;
+    background-color: #0b0b0b;
+    border: 1px solid rgba(255, 255, 255, 0.405);
+    color: white;
+    margin-left: 1rem;
+    padding: 0.2rem 0.5rem;
+}
+
+.img-container {
+    background-color: rgb(22, 208, 162);
+    width: 95%;
+    height: 80%;
+    margin-top: 1rem;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details {
+    width: 35%;
+    position: absolute;
+    right: 5rem;
+    bottom: 5rem;
+    color: white;
+}
+
+.title {
+    color: rgb(22, 208, 162);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.desc {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: end;
+    gap: 1rem
+}
+
+.buttons button {
+    border: none;
+    background-color: transparent;
+    font-size: 3rem;
+}
+
+.play,
+.info {
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 230ms;
+    touch-action: manipulation;
+}
+
+.play {
+    color: rgb(22, 208, 162);
+}
+
+.info {
+    color: rgb(154, 197, 186);
+}
+
+.play:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+}
+
+.info:hover {
+
+    box-shadow: rgba(131, 218, 164, 0.35) 0 -25px 18px -14px inset, rgba(131, 218, 164, 0.35) 0 1px 2px, rgba(131, 218, 164, 0.35)0 2px 4px, rgba(131, 218, 164, 0.35) 0 4px 8px, rgba(131, 218, 164, 0.35) 0 8px 16px, rgba(131, 218, 164, 0.35) 0 16px 32px;
+}
+
+.play:active {
+    transform: scale(0.9);
+}
+
+.info:active {
+    transform: scale(0.9);
+}

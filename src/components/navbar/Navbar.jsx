@@ -15,8 +15,18 @@ const Navbar = () => {
   return (
     <div className={navBackground ? 'navbar scrolled' : 'navbar'}>
       <div className="nav-container">
-        <div className="left-links">
+        <div className="sub-container">
           <h3>Slyter</h3>
+          <div className="left-links">
+            <span>Homepage</span>
+            <span>Collection</span>
+            <span>Movies</span>
+            <span>Series</span>
+            <span>Specials</span>
+          </div>
+        </div>
+
+        <div className="hamburger">
           <span>Homepage</span>
           <span>Collection</span>
           <span>Movies</span>

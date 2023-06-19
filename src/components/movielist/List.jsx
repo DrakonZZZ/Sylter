@@ -22,14 +22,10 @@ const List = () => {
       setSlideValue(slideValue + 1);
       listRef.current.style.transform = `translateX(${-441 + region}px)`;
     }
-
-    console.log(region);
   };
   return (
     <div className="movie-list">
-      <span className="list-title">
-        Movies that are being watched<span className="space-color">...</span>
-      </span>
+      <span className="list-title">Movies that are being watched...</span>
       <div className="slider">
         <BsFillArrowLeftCircleFill
           className="slider-arrow left"

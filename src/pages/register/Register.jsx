@@ -3,10 +3,16 @@ import './register.css';
 
 const Register = () => {
   const [userEmail, setUserEmail] = useState('');
+  const [userPassword, setUserPassword] = useState('');
   const emailRef = useRef();
+  const passwordRef = useRef();
 
   const handleReg = () => {
     setUserEmail(emailRef.current.value);
+  };
+
+  const handleLogin = () => {
+    setUserPassword(passwordRef.current.value);
   };
 
   console.log(userEmail);
@@ -25,12 +31,21 @@ const Register = () => {
           Ready to Get Spookified? Enter your email to create or restart your
           membership
         </p>
-        <div className="input">
-          <input type="email" placeholder="Email Address" ref={emailRef} />
-          <button className="register-btn" onClick={handleReg}>
-            Get Started
-          </button>
-        </div>
+        {!userEmail ? (
+          <div className="input">
+            <input type="email" placeholder="Email Address" ref={emailRef} />
+            <button className="register-btn" onClick={handleReg}>
+              Get Started
+            </button>
+          </div>
+        ) : (
+          <form className="input">
+            <input type="password" placeholder="Password" ref={passwordRef} />
+            <button className="register-btn" onClick={handleLogin}>
+              Login
+            </button>
+          </form>
+        )}
       </div>
     </div>
   );

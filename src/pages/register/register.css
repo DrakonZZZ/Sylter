@@ -1,0 +1,120 @@
+.register {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(33, 33, 33, 0.5) 0%, rgb(3, 3, 3) 100%),
+        url('https://mcdn.wallpapersafari.com/medium/62/56/HeEh3l.jpg');
+    position: relative;
+}
+
+.wrapper {
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.811);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: rgb(22, 208, 162);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.input input {
+    width: 20rem;
+    padding: 0.8rem 1rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+}
+
+.input button {
+    padding: 0.8rem 1.5rem;
+    background-color: rgb(21, 150, 118);
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: 600;
+    transition: all 0.1s ease-in-out;
+}
+
+.input button:hover {
+    color: white
+}
+
+.container {
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+}
+
+.container h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.container p {
+    font-weight: 600;
+}
+
+.signin-btn {
+    padding: 0.5rem 1rem;
+    background-color: rgb(21, 150, 118);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.1s ease-in-out;
+}
+
+.signin-btn:hover {
+    transform: scale(1.05);
+    color: white
+}
+
+.signin-btn:active {
+    transform: scale(0.95);
+}
+
+@media only screen and (max-width: 720px) {
+
+    .container {
+        padding: 1rem 2rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input input {
+        width: max-content;
+    }
+
+    .container h1 {
+        font-size: 2.2rem;
+    }
+
+    .container p {
+        font-weight: 300;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .input {
+        width: max-content;
+    }
+}

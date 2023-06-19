@@ -1,10 +1,10 @@
 import Layout from './pages/Layout';
-import Stream from './pages/stream/Stream';
+import Register from './pages/register/Register';
 
 function App() {
   return (
     <>
-      <Stream />
+      <Register />
     </>
   );
 }

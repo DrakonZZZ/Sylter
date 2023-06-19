@@ -1,0 +1,28 @@
+.stream {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.back-btn {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.196);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    gap: 0.5rem;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+    z-index: 5;
+    transition: all 0.1s ease-in-out;
+}
+
+.back-btn:hover {
+    color: white
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}

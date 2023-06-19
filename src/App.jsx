@@ -1,9 +1,10 @@
 import Layout from './pages/Layout';
+import Stream from './pages/stream/Stream';
 
 function App() {
   return (
     <>
-      <Layout />
+      <Stream />
     </>
   );
 }
